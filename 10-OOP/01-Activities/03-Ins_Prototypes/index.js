@@ -7,7 +7,7 @@ function Dog(name, age, breed) {
 }
 
 Dog.prototype.nap = function () {
-  console.log('Zzzzzzzzz');
+  console.log(`${this.name} is ${this.age} years old. ${this.name} is a ${this.breed} but he is sleeping`);
 };
 
 const dog = new Dog('Rex', 2, 'Bulldog');
